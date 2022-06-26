@@ -1,0 +1,229 @@
+html{
+      height: 100%;
+    }
+     body{
+      background-image: url('/images/blur-white.png');
+      margin: 0px;
+      padding: 0px;
+      //background-color: #F5F7F8;
+      position: relative;
+      height: auto;
+      min-height: 100% !important;
+
+
+    }
+
+
+/* style for menu bar: start */
+    .menu-bar-border{
+
+      background-color: #980000;
+      height: 3px;
+      clear: both;
+    }
+
+    #menu-bar{
+
+      background-color: #CB0000;
+      height: 50px;
+      color: white;
+
+
+    }
+
+    #pre-logo{
+
+      float: left;
+      background-color: #CB0000;
+      height: 50px;
+      width: 4%;
+
+    }
+
+    .logo{
+
+      width: 50px;
+      float: left;
+      background-color: white;
+      border-radius: 15%;
+    }
+
+/* style for menu bar: end */
+      
+    #panel-div{
+      position: fixed;
+      top: 60px;
+      left: 0px; 
+      bottom: 0px; 
+      width: 25%; 
+      background-color: #ffffff;
+      margin:1% 1% 1% 1%;
+      border-radius: 5px;
+      display:block;
+      overflow:hidden;
+    }
+    .app-div{
+      //background-image: url('./images/blur-white.png');
+      //background-image: url('./images/dark-grey-tile.png');
+      
+      /*make it fixed */
+      position: fixed;
+      top: 60px;
+      right: 0px; 
+      bottom: 0px; 
+      width: 72%; 
+      margin:1% 1% 0% 1%;
+      display:block;
+      overflow:auto;
+      padding: 1% 1% 0% 1%;
+    }
+    .app-div{
+    -ms-overflow-style: none;  // IE 10+
+    overflow: -moz-scrollbars-none;  // Firefox
+    }
+    .app-div::-webkit-scrollbar { 
+        display: none;  // Safari and Chrome
+    }
+    .right-div,.certificates-div{
+      background-image: url('./images/blur-white.png');
+      //background-image: url('./images/dark-grey-tile.png');
+      
+      /*make it fixed */
+      position: fixed;
+      top: 60px;
+      right: 0px; 
+      bottom: 0px; 
+      width: 72%; 
+      margin:1% 1% 0% 1%;
+      display:block;
+      //overflow:auto;
+      padding: 1% 1% 0% 1%;
+      /*display items evenly-spaced manner*/
+      display: flex;
+      flex-flow: row wrap;
+      //align-items:center;
+      justify-content: space-around;
+      //align-content: space-around;
+    }
+    .elem{
+      /*margin auto makes item align in the center*/
+      margin: auto;
+      float: left;
+    }
+    #name{
+      display: none;
+    }
+
+    .panel-mid, .panel-bottom{
+      width: 100%;
+      height: 31.3%;
+      overflow: hidden;
+    }
+
+    .panel-top{
+      width: 100%;
+      height: 36.3%;
+      font-size: 180%;
+      display:table;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      padding-top: 4%;
+    }
+    #profile-picture{
+
+      width: 40%;
+      border-radius: 50%;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+      margin-top: 3%;
+
+    }
+    #panel-img{
+      width: 40%;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+      margin-top: 3%;
+    }
+    .bg-deep-blue{
+    //background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      text-align: center;
+    }
+    #sortable { 
+      list-style-type: none; 
+      margin: 3% 3% 3% 3%;
+      padding: 0; 
+      width: 100%; }
+    #sortable li { 
+      margin: 3px 3px 3px 0; 
+      padding: 1px; 
+      float: left;  
+      text-align: center;
+      cursor: move; 
+    }
+    .skills-mob{
+      display: none;
+    }
+
+    a:hover{
+      text-decoration: none;
+    }
+    .proj-card{
+      //border: 1px #F0AD4E solid;
+      background-color: #4A555E;
+    }
+    .proj-card img{
+      border-bottom: 1px #124B87 solid;
+    }
+
+    button.mfp-arrow.mfp-arrow-right.mfp-prevent-close {
+        outline: none;
+  }
+  button.mfp-arrow.mfp-arrow-left.mfp-prevent-close {
+    outline: none;
+  }
+
+  @media  (max-width: 768px) {
+      #panel-div{
+        display: none;
+      }
+      #pre-logo{
+        width: 50px;
+      }
+      .app-div{
+      width: 100%;
+      float: none;
+      position: relative;
+      top: 5px;
+      left: 3px;
+      display: block;
+      
+      }
+      .app-div{
+        -ms-overflow-style: none;  // IE 10+
+        overflow: -moz-scrollbars-none;  // Firefox
+      }
+    .app-div::-webkit-scrollbar { 
+        display: none;  // Safari and Chrome
+      }
+    .right-div,.certificates-div{
+      width: 100%;
+      float: none;
+      position: relative;
+      top: 5px;
+      display: block;
+      
+    }
+    #name{
+      display: block;
+    }
+    #sortable {
+      display: none;
+    }
+    .skills-mob{
+      display: table;
+    }
+}
